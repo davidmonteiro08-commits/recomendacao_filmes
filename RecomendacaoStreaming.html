@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de Recomendação de filmes</title>
+        <script src="./RecomendacaoStreaming.js" defer></script>
+        <style>
+            body{
+                background-color:darkgray;
+            }
+            
+            div{
+                border: 2px solid black;
+                background-color:beige;
+            }
+
+            #div-filme{
+                border: 2px solid blueviolet;
+                background-color: bisque;
+            }
+
+            span{
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            p{
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            }
+
+            h1{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+                text-align:center;
+                color:beige;
+                text-decoration:dotted;
+                text-decoration-color: darksalmon;
+            }
+
+            #div-footer{
+                text-align: center;
+                font-family: cursive;
+                font-size: medium;
+                text-decoration: dotted;
+                text-decoration-color: lemonchiffon;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Sistema de Recomendação de Filmes</h1>
+        <div><form id="form-recomendacao">
+            <label>
+                <span>Digite sua idade: </span>
+                <input type="number" id="input-idade" required><br><br>
+
+                <span>Escolha o gênero: </span>
+                <select id="input-genero" required>
+                    <option value="1">Ação</option>
+                    <option value="2">Comédia</option>
+                    <option value="3">Drama</option>
+                </select><br><br>
+
+                <span>Escolha o horário: </span>
+                <select id="input-horario" required>
+                    <option value="1">Manhã</option>
+                    <option value="2">Tarde</option>
+                    <option value="3">Noite</option>
+                </select>
+            </label><br><br>
+
+            <button type="submit">Clique para ver o que recomendamos</button><br><br>
+        </form>
+    </div><br><br>
+
+    <div id="div-filme"><p id="p-recomendacao"></p>
+    <p id="p-motivo"></p>
+    <p id="p-streaming"></p></div><br><br><br>
+
+    <div id="div-footer"><footer>Site criado por: David Monteiro ₢2025</footer>
+    <footer>Sou estudante do curso técnico em informática para internet do ifce campus-tauá</footer></div>
+    </body>
+</html>
