@@ -1,0 +1,1 @@
+Olá a todos. Sou aluno do ifce no curso técnico em informática para internet,e estou criando este projeto para disponibilizar um projeto de recomendação de filmes baseado na idade,no gênero e no horário,que criei por sugestão de um dos meus professores. Está bem básico (sou iniciante na programação),mas está funcional.
